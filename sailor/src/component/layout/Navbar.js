@@ -1,6 +1,7 @@
 import React from 'react'; 
 import {Link} from 'react-router-dom'; 
 import SignIn from './SignIn'; 
+import SignOut from './SignOut'; 
 
 
 
@@ -10,10 +11,9 @@ import SignIn from './SignIn';
         <div className='container'>
           <Link to='/' className='brand-logo'>Sailor Nomad</Link>
           <SignIn />
+          <SignOut />
         </div>
       </nav>
-        
-
     )
 }
 

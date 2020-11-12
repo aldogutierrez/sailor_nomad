@@ -5,10 +5,9 @@ const SignIn = () => {
 
   return (
     <ul className='right'>
-      <li><NavLink to='/'>Search</NavLink></li>
+      <li><NavLink to='/search'>Search</NavLink></li>
       <li><NavLink to='/'>Logout</NavLink></li>
       <li><NavLink to='/' className='btn btn-floating pink, lighten-1'></NavLink>NN</li>
-
     </ul>
   )
 }
