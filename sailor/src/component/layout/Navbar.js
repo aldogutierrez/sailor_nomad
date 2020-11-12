@@ -1,14 +1,12 @@
-import React from 'react'
+import React from 'react'; 
+import {Link} from 'react-router-dom'; 
 
 
  const Navbar  = () => {
     return (
       <nav className='nav-wrapper grey darken-3 '>
-        <div>
-          <form className='form-inline'>
-            <input className='form-control mr-sm-2' type='search' placeholder='Search' />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+        <div className='container'>
+          <Link to='/' className='brand-logo'>Sailor Nomad</Link>
         </div>
       </nav>
         
