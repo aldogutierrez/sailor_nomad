@@ -1,5 +1,7 @@
 import React from 'react'; 
 import {Link} from 'react-router-dom'; 
+import SignIn from './SignIn'; 
+
 
 
  const Navbar  = () => {
@@ -7,6 +9,7 @@ import {Link} from 'react-router-dom';
       <nav className='nav-wrapper grey darken-3 '>
         <div className='container'>
           <Link to='/' className='brand-logo'>Sailor Nomad</Link>
+          <SignIn />
         </div>
       </nav>
         
