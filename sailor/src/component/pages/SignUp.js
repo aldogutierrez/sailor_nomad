@@ -1,4 +1,8 @@
+// React imports
 import React from 'react'
+
+// File imports
+import '../../App.css'
 
 function SignUp() {
     return (

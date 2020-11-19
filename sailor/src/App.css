@@ -8,6 +8,7 @@
 .home,
 .services,
 .about,
+.login,
 .sign-up {
 	display: flex;
 	height: 90vh;
@@ -43,11 +44,11 @@
 	font-size: 100px;
 }
 
-/* .login {
+.login {
 	background-image: url("https://www.everysteph.com/wp-content/uploads/2019/08/things-to-do-in-cancun-featured-2-1-1920x1000.jpg");
 	background-position: center;
-	background-size: fill;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color: #ffffff;
 	font-size: 100px;
-} */
+}

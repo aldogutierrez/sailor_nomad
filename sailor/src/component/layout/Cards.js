@@ -14,7 +14,7 @@ function Cards() {
 								src="http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-waterfall.jpg"
 								text="Explore the Hidden Waterfalls Inside Yosemite Valley"
 								label="Adventure"
-								path="/"
+								path="/login"
 							/>
 							<CardItem
 								src="https://images.r.cruisecritic.com/editors-picks/2017/US_Best-Luxury-Ship-Refurbishment.jpg"
