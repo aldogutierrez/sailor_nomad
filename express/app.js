@@ -3,8 +3,24 @@ const express = require('express')
 const app = express()
 const port = 3001
 
+const db_conn = require('./dynamo_db_writer.js');
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+
+app.get('/signup', (req, res) => {
+  email = req.query.email  // true
+  pass = req.query.password // true
+
+  res.send(db_conn.signup(email,pass))
+})
+
+app.get('/login', (req, res) => {
+  email = req.query.email  // true
+  pass = req.query.password // true
+
+  res.send(db_conn.login(email,pass))
 })
 
 app.listen(port, () => {
