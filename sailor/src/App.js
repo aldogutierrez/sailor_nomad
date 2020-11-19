@@ -13,12 +13,26 @@ import './App.css'
 
 class App extends Component
 {
+	//it will fetch the 
+	
+	getLocation() {
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(position => {
+			const { latitude,longitude} = position.coords; 
+			fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=551b95d64a4b49569737e16e9aef77c7`)
+			.then(response => response.json())
+			.then(console.log); 
+			}); 
+		}	
+	}
+
+
 	render()
 	{
 		return (
 			<> 
 				<Router>
-					<div>
+					<div className="App" onLoad = {this.getLocation()}>
 						<Navbar />
 						<Switch>
 							<Route path='/' exact component={Home}/>
