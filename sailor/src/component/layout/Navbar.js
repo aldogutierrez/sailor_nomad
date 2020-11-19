@@ -1,6 +1,6 @@
 // React imports
-import React, {useState, useEffect} from 'react'; 
-import { Link } from 'react-router-dom'; 
+import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 // File imports
 import { Button } from './Button';
@@ -37,9 +37,10 @@ function Navbar() {
 	// Going back to the button event, we resize the window and hide the button
 	window.addEventListener('resize', showButton);
 
-	// 
+	// This is done so that whenever the app is accessed on mobile
+    // the menus appear/disappear as clicked
 	const closeMobileMenu = () => setClick(false);
-	
+
 	return (
 		<>
 			<nav className='navbar'>
@@ -85,8 +86,8 @@ function Navbar() {
 							</Link>
 						</li>
 					</ul>
-					{button && <Button buttonStyle='btn--outline'>Log In</Button>}
-					{button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+					{button && <Button path='/login' buttonStyle='btn--outline'>Log In</Button>}
+					{button && <Button path='/sign-up' buttonStyle='btn--outline'>Sign Up</Button>}
 				</div>
 			</nav>
 		</>
