@@ -17,7 +17,7 @@ function WelcomeSection() {
                 </Button>
             </div>
             <div className='hero-btns'>
-                <Button path={{pathname: 'https://www.youtube.com/watch?v=zJCrrTk-dLQ'}} className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
+                <Button path={{pathname: 'https://www.youtube.com/watch?v=zJCrrTk-dLQ'}} target='_blank' className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
                     Watch Trailer
                 </Button>
             </div>
