@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
+}
+
+.home,
+.services,
+.about,
+.login,
+.sign-up {
+	display: flex;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+}
+
+.services {
+	background-image: url("http://www.beyondfashionmagazine.com/wp-content/uploads/2017/11/nws-st-brazil-rio-de-janeiro-at-night.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-size: 100px;
+}
+
+.about {
+	background-image: url("https://stillmed.olympic.org/media/Images/OlympicOrg/News/2020/03/24/2020-03-24-tokyo-thumbnail-01.jpg");
+	background-position: center;
+	background-size: fill;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-size: 100px;
+}
+
+.sign-up {
+	background-image: url("component/images/signup.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-size: 100px;
+}
+
+.login {
+	background-image: url("https://www.everysteph.com/wp-content/uploads/2019/08/things-to-do-in-cancun-featured-2-1-1920x1000.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-size: 100px;
+}
