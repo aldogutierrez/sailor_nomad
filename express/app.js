@@ -1,13 +1,17 @@
 
-const express = require('express')
-const app = express()
-const port = 3001
+const express = require('express'); 
+const app = express(); 
+const port = 3001; 
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: false }));
+
 
 const db_conn = require('./dynamo_db_writer.js');
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+
 
 app.get('/signup', (req, res) => {
   email = req.query.email  // true
@@ -26,4 +30,6 @@ app.get('/login', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+
 
