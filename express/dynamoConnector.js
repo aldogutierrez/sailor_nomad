@@ -7,7 +7,7 @@ AWS.config.update({
 var docClient = new AWS.DynamoDB.DocumentClient();
 
 var table = "users";
-var email = 'test@gmail.com'
+var email = 'test@gmail.com'; 
 
 var params = {
     TableName: table,
