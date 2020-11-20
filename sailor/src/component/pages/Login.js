@@ -1,8 +1,6 @@
 // React imports
 import React, { Component } from 'react'
 
-
-
 class Login extends Component {
 
     state = {
@@ -19,6 +17,9 @@ class Login extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
+        fetch("http://localhost:3001/login?email=" + this.state.email + '&password=' + this.state.password)
+            .then(res => {alert(res.text())})
+            .catch(err => err);
     }
 
 
