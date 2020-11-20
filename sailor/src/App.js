@@ -11,6 +11,8 @@ import About from "./component/pages/About";
 import Login from "./component/pages/Login";
 import './App.css'
 
+import User from "./component/auth/User";
+
 class App extends Component
 {
 	//it will fetch the 
