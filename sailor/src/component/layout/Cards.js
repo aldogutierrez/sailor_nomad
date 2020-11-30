@@ -14,7 +14,7 @@ function Cards() {
 								src="http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-waterfall.jpg"
 								text="Explore the Hidden Waterfalls Inside Yosemite Valley"
 								label="Adventure"
-								path="/login"
+								path="/login" 
 							/>
 							<CardItem
 								src="https://images.r.cruisecritic.com/editors-picks/2017/US_Best-Luxury-Ship-Refurbishment.jpg"
@@ -34,7 +34,7 @@ function Cards() {
 								src="https://www.roadaffair.com/wp-content/uploads/2018/01/brandenburg-gate-berlin-germany-shutterstock_661903903.jpg"
 								text="Walk Around the Same Ground Where History Was Once Made"
 								label="History"
-								path="/about"
+								path="/historical"
 							/>
 						</ul>
 					</div>

@@ -9,6 +9,7 @@ import Services from "./component/pages/Services";
 import SignUp from "./component/pages/SignUp";
 import About from "./component/pages/About";
 import Login from "./component/pages/Login";
+import Historical from './component/layout/Historical'; 
 import './App.css'
 
 class App extends Component
@@ -39,6 +40,7 @@ class App extends Component
 							<Route path='/sign-up' component={SignUp}/>
 							<Route path='/about' component={About} />
 							<Route path='/login' component={Login} />
+							<Route path='/historical' component={Historical} />
 						</Switch>
 					</div>
 				</Router>
