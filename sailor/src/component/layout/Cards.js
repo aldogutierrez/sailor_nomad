@@ -28,7 +28,7 @@ function Cards() {
 								src="http://assets.epicurious.com/photos/54ad654b6529d92b2c045e13/master/pass/51197040_turkey-ramen_1x1.jpg"
 								text="Get Delighted With the Culinary Specialties of the Area"
 								label="Cuisine"
-								path="/sign-up"
+								path="/Cuisines"
 							/>
 							<CardItem
 								src="https://www.roadaffair.com/wp-content/uploads/2018/01/brandenburg-gate-berlin-germany-shutterstock_661903903.jpg"

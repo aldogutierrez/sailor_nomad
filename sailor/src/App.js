@@ -9,7 +9,8 @@ import Services from "./component/pages/Services";
 import SignUp from "./component/pages/SignUp";
 import About from "./component/pages/About";
 import Login from "./component/pages/Login";
-import Historical from './component/layout/Historical'; 
+import HistoricalSites from './component/layout/HistoricalSites'; 
+import Cuisines from './component/layout/Cuisines'; 
 import './App.css'
 
 class App extends Component
@@ -40,7 +41,8 @@ class App extends Component
 							<Route path='/sign-up' component={SignUp}/>
 							<Route path='/about' component={About} />
 							<Route path='/login' component={Login} />
-							<Route path='/historical' component={Historical} />
+							<Route path='/historical' component={HistoricalSites} />
+							<Route path='/cuisines' component={Cuisines} />
 						</Switch>
 					</div>
 				</Router>

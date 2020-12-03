@@ -2,7 +2,7 @@ import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 
-function Historical() {
+function HistoricalSites() {
   return (
     <>
       <div className="cards">
@@ -59,4 +59,4 @@ function Historical() {
   );
 }
 
-export default Historical;
+export default HistoricalSites;
