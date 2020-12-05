@@ -19,7 +19,7 @@ app.get('/googleMe', (req, res) => {
   long = req.query.long;
   lat = req.query.lat;
 
-  gurl = "https://www.google.com/maps/@" + lat+","+long
+  gurl = "https://www.google.com/maps/search/Restaurants/@" + lat+","+long
 
   res.send(gurl)
 })
