@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'; 
 
 
 class SignUp extends Component {
@@ -18,13 +19,17 @@ class SignUp extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        axios.put('/signup',this.state); 
         console.log(this.state);
+        var frm = document.getElementsByName('submitForm')[0];
+        frm.reset();  // Reset
+        
     }
     render() {
         return (
             <div className='container'>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
-                <form className='white' onSubmit={this.handleSubmit} >
+                <form className='white' name='submitForm' onSubmit={this.handleSubmit} >
                     <h5 className='grey-text text-darken-3'>Sign Up</h5>
 
                     <div className='input-field'>

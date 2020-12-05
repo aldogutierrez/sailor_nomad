@@ -12,6 +12,8 @@ import Login from "./component/pages/Login";
 import HistoricalSites from './component/layout/HistoricalSites'; 
 import Cuisines from './component/layout/Cuisines'; 
 import './App.css'
+import Hikes from "./component/layout/Hikes";
+import Hotels from "./component/layout/Hotels";
 
 class App extends Component
 {
@@ -43,6 +45,8 @@ class App extends Component
 							<Route path='/login' component={Login} />
 							<Route path='/historical' component={HistoricalSites} />
 							<Route path='/cuisines' component={Cuisines} />
+							<Route path='/hikes' component={Hikes} />
+							<Route path='/hotels' component={Hotels} />
 						</Switch>
 					</div>
 				</Router>

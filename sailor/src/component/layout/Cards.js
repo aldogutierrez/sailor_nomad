@@ -12,15 +12,15 @@ function Cards() {
 						<ul className="cards__items">
 							<CardItem
 								src="http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-waterfall.jpg"
-								text="Explore the Hidden Waterfalls Inside Yosemite Valley"
-								label="Adventure"
-								path="/login" 
+								text="Explore Hidden Hiking Trails"
+								label="Hikes"
+								path="/hikes" 
 							/>
 							<CardItem
-								src="https://images.r.cruisecritic.com/editors-picks/2017/US_Best-Luxury-Ship-Refurbishment.jpg"
-								text="Travel Through the Islands of Bali in a Private Cruise"
-								label="Luxury"
-								path="/services"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabs1hZCxJHdgR-3pWtkS4X75Ag9BFX0vPaQ&usqp=CAU"
+								text="Find Your Comfort"
+								label="Hotels"
+								path="/hotels"
 							/>
 						</ul>
 						<ul className="cards__items">
