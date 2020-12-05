@@ -11,22 +11,31 @@ import About from "./component/pages/About";
 import Login from "./component/pages/Login";
 import './App.css'
 
-import User from "./component/auth/User";
-
 class App extends Component
 {
 	//it will fetch the 
 	
 	getLocation() {
-	if (navigator.geolocation) {
+	if (navigator.geolocation && this.map_url == null) {
+		console.log("this map url = " + this.map_url)
 		navigator.geolocation.getCurrentPosition(position => {
 			const { latitude,longitude} = position.coords; 
-			fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=551b95d64a4b49569737e16e9aef77c7`)
-			.then(response => response.json())
-			.then(console.log); 
-			}); 
-		}	
+				fetch("http://localhost:3001/googleMe?lat="+latitude+"&long="+longitude)
+				.then((response) => {
+					return response.text();
+				 })
+				 .then((responseJson) => {
+					console.log(responseJson);
+					this.map_url=responseJson
+				 })
+				 .catch((error) => {
+					console.error(error);
+				 });
+					});
+			}
 	}
+
+
 
 	render()
 	{

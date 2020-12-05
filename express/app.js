@@ -2,9 +2,12 @@
 const express = require('express'); 
 const app = express(); 
 const port = 3001; 
+const cors = require('cors')
+
+
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: false }));
-
+app.use(cors())
 
 const db_conn = require('./dynamo_db_writer.js');
 
@@ -12,6 +15,14 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/googleMe', (req, res) => {
+  long = req.query.long;
+  lat = req.query.lat;
+
+  gurl = "https://www.google.com/maps/@" + lat+","+long
+
+  res.send(gurl)
+})
 
 app.get('/signup', (req, res) => {
   email = req.query.email  // true
