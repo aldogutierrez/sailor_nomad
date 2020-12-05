@@ -14,13 +14,13 @@ function Hotels() {
                 src="http://tdr.aaa.com/tdr-images/images/property_photo/accommodation/26235H1.jpg"
                 text="DoubleTree by Hilton (from $71)"
                 label="Comprehensive Amenities"
-                path=""
+                path="https://www.google.com/maps/search/doubletree+hilton+san+jose+california"
               />
               <CardItem
                 src="https://upload.wikimedia.org/wikipedia/commons/a/aa/The_Fairmont_Hotel_in_San_Jose.jpg"
                 text="The Fairmont Hotel"
                 label="Style and Comfort"
-                path=""
+                path="https://www.google.com/maps/search/the+fiarmont+san+jose+california"
               />
             </ul>
             <ul className="cards__items">
@@ -28,13 +28,13 @@ function Hotels() {
                 src="https://www.therowhotel.com/gallery-images/properties/6/0/3/1559699481__DSC6077blend_1.jpg"
                 text="The Row Hotel"
                 label="Best Rate Guaranteed"
-                path=""
+                path="https://www.google.com/maps/search/the+row+hotel"
               />
               <CardItem
                 src="https://www.hotelgranodeoro.com/images/photos/50.jpg"
                 text="Hotel Grando de Oro"
                 label="Signature Suites"
-                path=""
+                path="https://www.google.com/maps/search/hotel+grando+de+oro+san+jose+california"
               />
             </ul>
 
@@ -43,13 +43,13 @@ function Hotels() {
                 src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/130408099.jpg?k=407a62aa05d6dce3be6867aff48532d3513c104cd402dff05c6735da1382bb34&o="
                 text="Best Western Plus San Jose"
                 label="Gives Enjoynment"
-                path=""
+                path="https://www.google.com/maps/search/best+western+plus+san+jose+california"
               />
               <CardItem
                 src="https://dh-prod-cdn.azureedge.net/-/media/property/destination-hotels/hotel-de-anza/hdaexteriornight-maximum-cropped-1440x460.jpg?ts=e96376f8-9200-43e5-8c2e-4bf778ffcdc9"
                 text="Hotel Deanza"
                 label="A Destination Hotel"
-                path=""
+                path="https://www.google.com/maps/search/hotel+de+anza+california"
               />
             </ul>
           </div>

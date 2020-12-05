@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+
 // File imports
 import Navbar from "./component/layout/Navbar";
 import Home from './component/pages/Home'
