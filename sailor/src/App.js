@@ -9,7 +9,11 @@ import Services from "./component/pages/Services";
 import SignUp from "./component/pages/SignUp";
 import About from "./component/pages/About";
 import Login from "./component/pages/Login";
+import HistoricalSites from './component/layout/HistoricalSites'; 
+import Cuisines from './component/layout/Cuisines'; 
 import './App.css'
+import Hikes from "./component/layout/Hikes";
+import Hotels from "./component/layout/Hotels";
 
 import User from "./component/auth/User";
 
@@ -41,6 +45,10 @@ class App extends Component
 							<Route path='/sign-up' component={SignUp}/>
 							<Route path='/about' component={About} />
 							<Route path='/login' component={Login} />
+							<Route path='/historical' component={HistoricalSites} />
+							<Route path='/cuisines' component={Cuisines} />
+							<Route path='/hikes' component={Hikes} />
+							<Route path='/hotels' component={Hotels} />
 						</Switch>
 					</div>
 				</Router>

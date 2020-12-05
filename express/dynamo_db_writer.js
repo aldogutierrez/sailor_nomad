@@ -82,5 +82,7 @@ function login(email,password){
         
 }
 
+signup('raza@gmail.com', 'abcabbcabc'); 
+
 exports.signup = signup;
 exports.login = login;
